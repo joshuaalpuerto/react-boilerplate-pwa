@@ -4,11 +4,12 @@ node_js:
 before_install:
  - npm install -g yarn@0.27.5
  - yarn --version
+ - npm install -g babel-eslint
  - npm install -g standard
  - npm install -g snazzy
+install:
  - yarn
  - yarn build
-
 after_success: 'npm run coveralls'
 
 cache:
