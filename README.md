@@ -1,5 +1,5 @@
 # React Boilerplate PWA
-> A boilerplate w/c showcase the google lighthouse integration
+> A [React Boilerplate](https://github.com/react-boilerplate/react-boilerplate) w/c showcase the google lighthouse integration.
 
 ## Quick start
 
