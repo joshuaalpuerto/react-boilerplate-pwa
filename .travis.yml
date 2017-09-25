@@ -6,13 +6,8 @@ before_install:
  - yarn --version
  - npm install -g standard
  - npm install -g snazzy
-install:
  - yarn
  - yarn build
-
-notifications:
-  email:
-    on_failure: change
 
 after_success: 'npm run coveralls'
 
