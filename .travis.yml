@@ -10,7 +10,9 @@ before_install:
 install:
  - yarn
  - yarn build
-after_success: 'npm run coveralls'
+after_success:
+ - 'npm run coveralls'
+ - node node_modules/lighthouse-ci/runlighthouse.js https://react-boilerplate-pwa.netlify.com/
 
 cache:
   yarn: true
