@@ -1,6 +1,9 @@
 # React Boilerplate PWA
 > A [React Boilerplate](https://github.com/react-boilerplate/react-boilerplate) w/c showcase the google lighthouse integration.
 
+![Travis CI](https://travis-ci.org/joshuaalpuerto/react-boilerplate-pwa.svg?branch=master)
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+
 ## Quick start
 
 1. Clone this repo using `git clone --depth=1 https://github.com/joshuaalpuerto/react-boilerplate-pwa.git`
