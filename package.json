@@ -1,17 +1,17 @@
 {
-  "name": "cliqq-7-11",
+  "name": "react-boilerplate-pwa",
   "version": "3.5.0",
-  "description": "7-eleven CliQQ Application",
+  "description": "a boilerplate focus on PWA lighthouse integration",
   "repository": {
     "type": "git",
-    "url": "git@bitbucket.org:jalpuerto/cliqq-seven-eleven.git"
+    "url": "git@github.com:joshuaalpuerto/react-boilerplate-pwa.git"
   },
   "engines": {
     "npm": ">=4",
     "node": "7.10.1",
     "yarn": "0.27.5"
   },
-  "author": "Offshorly Devs",
+  "author": "Joshua C Alpuerto <joshuacalpuerto@gmail.com>",
   "license": "MIT",
   "scripts": {
     "analyze:clean": "rimraf stats.json",
