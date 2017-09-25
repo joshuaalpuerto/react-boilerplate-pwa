@@ -1,5 +1,8 @@
 # React Boilerplate PWA
-> A boilerplate w/c showcase the google lighthouse integration
+> A [React Boilerplate](https://github.com/react-boilerplate/react-boilerplate) w/c showcase the google lighthouse integration.
+
+![Travis CI](https://travis-ci.org/joshuaalpuerto/react-boilerplate-pwa.svg?branch=master)
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Quick start
 
