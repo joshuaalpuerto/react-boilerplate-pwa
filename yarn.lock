@@ -4800,6 +4800,13 @@ liftoff@^2.2.0:
     rechoir "^0.6.2"
     resolve "^1.1.7"
 
+"lighthouse-ci@https://github.com/ebidel/lighthouse-ci":
+  version "0.0.2"
+  resolved "https://github.com/ebidel/lighthouse-ci#d68219694ed92c86e8b08cf22e52b8e946ff88a9"
+  dependencies:
+    minimist "^1.2.0"
+    node-fetch "^1.7.3"
+
 lint-staged@3.5.1:
   version "3.5.1"
   resolved "https://registry.yarnpkg.com/lint-staged/-/lint-staged-3.5.1.tgz#a9a2b0c161b436f8dce4bb27265e34d97a56ed82"
@@ -5411,7 +5418,7 @@ no-case@^2.2.0:
   dependencies:
     lower-case "^1.1.1"
 
-node-fetch@^1.0.1:
+node-fetch@^1.0.1, node-fetch@^1.7.3:
   version "1.7.3"
   resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-1.7.3.tgz#980f6f72d85211a5347c6b2bc18c5b84c3eb47ef"
   dependencies:
