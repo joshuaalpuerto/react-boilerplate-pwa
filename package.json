@@ -191,6 +191,7 @@
       "!app/**/*.test.{js,jsx}",
       "!app/*/RbGenerated*/*.{js,jsx}",
       "!app/app.js",
+      "!app/sw-handler.js",
       "!app/global-styles.js",
       "!app/*/*/Loadable.{js,jsx}"
     ],
@@ -283,6 +284,7 @@
     "extract-text-webpack-plugin": "3.0.0",
     "file-loader": "0.11.1",
     "gulp": "3.9.1",
+    "happypack": "4.0.0",
     "html-loader": "0.4.5",
     "html-webpack-plugin": "2.29.0",
     "image-webpack-loader": "2.0.0",
