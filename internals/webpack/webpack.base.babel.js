@@ -4,6 +4,7 @@
 
 const path = require('path')
 const webpack = require('webpack')
+const HappyPack = require('happypack')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 
 // Remove this line once the following warning goes away (it was meant for webpack loader authors not users):
@@ -23,10 +24,7 @@ module.exports = (options) => ({
       {
         test: /\.js$/, // Transform all .js files required somewhere with Babel
         exclude: /node_modules/,
-        use: {
-          loader: 'babel-loader',
-          options: options.babelQuery
-        }
+        loader: 'happypack/loader?id=jsx'
       },
       {
         // Preprocess our own .css files
@@ -36,7 +34,7 @@ module.exports = (options) => ({
         exclude: /node_modules/,
         use: ExtractTextPlugin.extract({
           fallback: 'style-loader',
-          use: 'css-loader'
+          use: 'happypack/loader?id=styles'
         })
       },
       {
@@ -45,7 +43,7 @@ module.exports = (options) => ({
         include: /node_modules/,
         use: ExtractTextPlugin.extract({
           fallback: 'style-loader',
-          use: 'css-loader'
+          use: 'happypack/loader?id=styles'
         })
       },
       {
@@ -90,6 +88,18 @@ module.exports = (options) => ({
     ]
   },
   plugins: options.plugins.concat([
+    new HappyPack({
+      id: 'jsx',
+      loaders: [{
+        loader: 'babel-loader',
+        options: options.babelQuery
+      }]
+    }),
+    new HappyPack({
+      id: 'styles',
+      loaders: ['css-loader']
+    }),
+
     new ExtractTextPlugin('styles.css'),
 
     new webpack.ProvidePlugin({
